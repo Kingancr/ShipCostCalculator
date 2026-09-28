@@ -29,15 +29,15 @@ public class Main {
          */
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter Item Price: ");
-        double input = scanner.nextDouble();
+        double itemPrice = scanner.nextDouble();
         double totalPrice;
-        if (input >= 100) {
-            totalPrice = input;
+        if (itemPrice >= 100) {
+            totalPrice = itemPrice;
             System.out.println("Your shipping is free!");
         }
         else {
-            totalPrice = input * 1.02;
+            totalPrice = itemPrice * 1.02;
         }
-        System.out.println("Total price is: $" + totalPrice );
+        System.out.println("Total price is: $" + totalPrice);
     }
 }
